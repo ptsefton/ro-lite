@@ -85,7 +85,7 @@ As many people have the same name, and a person may have multiple email addresse
 _Tip: Always providing a  `@id` on a `Person` avoids duplicating their other attributes on later mentions of the same person._
 
 In ROLite, if a file does not list a `creator`, and is within the Research Object's folders, it's creator can reasonably be assumed to be the `creator` of the containing research object. However, where appropriate, the Research Object manifest allows overriding with more precise attribution per resource. For instance, if this chart was created by Alice:
-
+```jsonld
 {
             "@id": "data/repository-sizes-chart.png",
             "@type": ["ImageObject"],            
@@ -95,7 +95,7 @@ In ROLite, if a file does not list a `creator`, and is within the Research Objec
                 "name": "Alice W Land",
             }
 }
-
+```
 
 ### Multiple people
 
