@@ -86,6 +86,7 @@ _Tip: Always providing a  `@id` on a `Person` avoids duplicating their other att
 
 In ROLite, if a file does not list a `creator`, and is within the Research Object's folders, it's creator can reasonably be assumed to be the `creator` of the containing research object. However, where appropriate, the Research Object manifest allows overriding with more precise attribution per resource. For instance, if this chart was created by Alice:
 
+```jsonld
 {
             "@id": "data/repository-sizes-chart.png",
             "@type": ["ImageObject"],            
@@ -95,7 +96,7 @@ In ROLite, if a file does not list a `creator`, and is within the Research Objec
                 "name": "Alice W Land",
             }
 }
-
+```
 
 ### Multiple people
 
@@ -151,7 +152,7 @@ This example shows how RO Lite can be used with a non-trivial pre-existing direc
 
 The Research Object [manifest.jsonld](https://github.com/ResearchObject/ro-lite/blob/master/examples/workflow-0.1.0/manifest.jsonld#L39) only highlight a couple of these files:
 
-```json
+```jsonld
 "aggregates": [
         {
             "@id": "workflow/workflow.knime",
